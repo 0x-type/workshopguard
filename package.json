@@ -1,0 +1,28 @@
+{
+  "name": "c01-dealership-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "C01_NO_PERSIST=true AI_PROVIDER=mock node --import tsx --test tests/*.test.ts",
+    "check": "C01_NO_PERSIST=true AI_PROVIDER=mock node --import tsx scripts/demo-check.ts"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "resend": "^6.28.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "tailwindcss": "^4.1.13",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

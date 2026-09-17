@@ -1,0 +1,61 @@
+{
+  "case_id": "C01",
+  "data_status": "SYNTHETIC EXERCISE DATA; not real client, country, programme or participant data",
+  "clock": "Exercise-local time only; no real event date implied",
+  "customers": [
+    {
+      "id": "CUS-A",
+      "preferred_language": "French",
+      "contact_permission": "service updates only"
+    },
+    {
+      "id": "CUS-B",
+      "preferred_language": "English",
+      "contact_permission": "callback only"
+    }
+  ],
+  "messages": [
+    {
+      "id": "MSG-1",
+      "customer_id": "CUS-A",
+      "channel": "email",
+      "text": "Can I collect my car this afternoon?",
+      "case_ref": "JOB-1"
+    },
+    {
+      "id": "MSG-2",
+      "customer_id": "CUS-A",
+      "channel": "phone-note",
+      "text": "I asked about collecting the same car. Please call me.",
+      "case_ref": "JOB-1"
+    },
+    {
+      "id": "MSG-3",
+      "customer_id": "CUS-B",
+      "channel": "web",
+      "text": "I need to change my service booking.",
+      "case_ref": "JOB-2"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "JOB-1",
+      "workshop_state": "work finished",
+      "quality_check": "pending",
+      "crm_state": "ready for collection",
+      "updated_at": "09:00"
+    },
+    {
+      "id": "JOB-2",
+      "workshop_state": "appointment booked",
+      "slot": "Day 2, 10:00",
+      "crm_state": "booking confirmed",
+      "updated_at": "09:10"
+    }
+  ],
+  "rules": [
+    "Only the service adviser can promise collection.",
+    "Conflicting states require review.",
+    "Use customer IDs, never guessed identity matches."
+  ]
+}

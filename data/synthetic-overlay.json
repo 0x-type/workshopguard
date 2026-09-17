@@ -1,0 +1,135 @@
+{
+  "data_status": "SYNTHETIC DEMO OVERLAY - created for this exercise. NOT part of the supplied C01/initial.json and NOT real client data.",
+  "purpose": "Adds only the fields the prototype needs that the supplied record does not contain (contact numbers, portal links, checklist rows, case ownership). The supplied file is never modified.",
+  "clock": {
+    "note": "Exercise-local clock. Times are HH:MM only; no real date is implied.",
+    "starts_at": "09:15",
+    "advances_minutes_per_event": 1
+  },
+  "appointment_slots": {
+    "note": "Options offered by the portal booking picker. Exercise-local days, never real dates.",
+    "days": [
+      "Day 1",
+      "Day 2",
+      "Day 3",
+      "Day 4",
+      "Day 5"
+    ],
+    "times": [
+      "08:00",
+      "08:30",
+      "09:00",
+      "09:30",
+      "10:00",
+      "10:30",
+      "11:00",
+      "11:30",
+      "14:00",
+      "14:30",
+      "15:00",
+      "15:30",
+      "16:00",
+      "16:30",
+      "17:00"
+    ]
+  },
+  "dealership": {
+    "name": "Autohaus Frisch",
+    "support_email": "service@autohaus-frisch.invalid",
+    "phone": "+212 520 000 000",
+    "phone_note": "Clearly synthetic placeholder. Not a dialable number.",
+    "product_name": "Communication Assistant",
+    "disclaimer": "Unofficial prototype. Not an Autohaus Frisch service.",
+    "logo": "/autohaus-frisch.webp"
+  },
+  "case_ownership": [
+    {
+      "customer_id": "CUS-A",
+      "case_ref": "JOB-1",
+      "derived_from": "C01/initial.json -> messages[MSG-1].customer_id + .case_ref",
+      "confidence": "supplied-derived"
+    },
+    {
+      "customer_id": "CUS-B",
+      "case_ref": "JOB-2",
+      "derived_from": "C01/initial.json -> messages[MSG-3].customer_id + .case_ref",
+      "confidence": "supplied-derived"
+    }
+  ],
+  "message_times": {
+    "note": "Display-only ordering times for the supplied messages. The supplied record carries no timestamps; these are SYNTHETIC and affect nothing but sort order.",
+    "MSG-1": "09:05",
+    "MSG-2": "09:08",
+    "MSG-3": "09:12"
+  },
+  "customers": [
+    {
+      "id": "CUS-A",
+      "display_label": "Customer A",
+      "verified_phone": "+212 600 000 001",
+      "portal_token": "demo-a-7f3c91b2e4"
+    },
+    {
+      "id": "CUS-B",
+      "display_label": "Customer B",
+      "verified_phone": "+212 600 000 002",
+      "portal_token": "demo-b-2a5d08c6f1"
+    }
+  ],
+  "phone_note": "All numbers use an obviously synthetic +212 5xx/6xx 000 000 pattern. None of them is a real, dialable subscriber number.",
+  "employees": [
+    {
+      "id": "EMP-TEC-1",
+      "display_label": "Demo Technician",
+      "role": "technician"
+    },
+    {
+      "id": "EMP-QUA-1",
+      "display_label": "Demo Quality Inspector",
+      "role": "quality-inspector"
+    },
+    {
+      "id": "EMP-ADV-1",
+      "display_label": "Demo Service Adviser",
+      "role": "service-adviser"
+    }
+  ],
+  "case_checks": {
+    "JOB-1": [
+      {
+        "key": "workshop-work",
+        "name": "Workshop repair work",
+        "status": "finished",
+        "owner_role": "technician",
+        "note": "Recorded when the job was booked in.",
+        "origin": "supplied"
+      },
+      {
+        "key": "quality-check",
+        "name": "Quality check",
+        "status": "pending",
+        "owner_role": "quality-inspector",
+        "note": "Not carried out yet.",
+        "origin": "supplied"
+      },
+      {
+        "key": "collection-approval",
+        "name": "Collection approval",
+        "status": "not confirmed",
+        "owner_role": "service-adviser",
+        "note": "Not yet approved.",
+        "origin": "synthetic"
+      }
+    ],
+    "JOB-2": [
+      {
+        "key": "appointment",
+        "name": "Service appointment",
+        "status": "booked",
+        "owner_role": "service-adviser",
+        "note": "Booked with the customer.",
+        "origin": "supplied"
+      }
+    ]
+  }
+}
