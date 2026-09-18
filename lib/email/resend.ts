@@ -78,8 +78,7 @@ export async function sendTestEmail(args: {
   const notice = [
     "-----------------------------------------------------------",
     "TEST MESSAGE from an UNOFFICIAL PROTOTYPE.",
-    "Not an Autohaus Frisch service and not connected to their",
-    "systems.",
+    "WorkshopGuard is an unofficial prototype using synthetic demonstration data.",
     `Case ${args.caseRef}, customer ${args.customerId} — both invented.`,
     "No real customer was contacted. Sent only to an allow-listed",
     "test address.",

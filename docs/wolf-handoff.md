@@ -1,8 +1,8 @@
-# Prototype handoff
+# WorkshopGuard prototype handoff
 
 Case: **C01 — "The customer who keeps calling."**
 Candidate/team: **[your name]**.
-Prototype location: **`/Users/test/octopus`** — `npm install && npm run dev` → http://localhost:3000.
+Run locally with `npm install && npm run dev`, then open http://localhost:3000.
 
 ## The problem we validated
 

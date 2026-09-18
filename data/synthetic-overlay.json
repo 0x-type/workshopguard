@@ -34,12 +34,12 @@
     ]
   },
   "dealership": {
-    "name": "Autohaus Frisch",
-    "support_email": "service@autohaus-frisch.invalid",
+    "name": "WorkshopGuard",
+    "support_email": "support@workshopguard.invalid",
     "phone": "+212 520 000 000",
     "phone_note": "Clearly synthetic placeholder. Not a dialable number.",
-    "product_name": "Communication Assistant",
-    "disclaimer": "Unofficial prototype. Not an Autohaus Frisch service.",
+    "product_name": "Customer Communication Assistant",
+    "disclaimer": "Unofficial prototype using synthetic demonstration data.",
     "logo": "/autohaus-frisch.webp"
   },
   "case_ownership": [

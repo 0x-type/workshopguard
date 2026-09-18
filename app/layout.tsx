@@ -3,9 +3,9 @@ import "./globals.css";
 import { ToastProvider } from "@/components/ui/Toasts";
 
 export const metadata: Metadata = {
-  title: "Autohaus Frisch Communication Assistant — unofficial prototype",
+  title: "WorkshopGuard — Customer Communication Assistant",
   description:
-    "Unofficial prototype built for a workshop exercise. Not an Autohaus Frisch service. All records are synthetic.",
+    "Conflict-aware customer communication for vehicle workshops—safe multilingual drafts, employee approvals, communication preferences and auditable status updates.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

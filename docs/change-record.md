@@ -1,4 +1,4 @@
-# What we were told, and what we changed because of it
+# WorkshopGuard change record
 
 A short record of the problem as given, the feedback received while building, and what actually
 moved as a result. Kept honest: it includes the things we got wrong.

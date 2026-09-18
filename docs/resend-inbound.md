@@ -1,4 +1,4 @@
-# Resend inbound email — setup
+# WorkshopGuard Resend inbound email setup
 
 Receiving real email is **optional** (P2 in the plan). The demo does not depend
 on it: the clearly-labelled *Simulate an incoming email* button covers the same
@@ -22,16 +22,16 @@ That is the only real obstacle. Everything else is a few minutes of clicking.
 
 ## 1. Point your domain's mail at Resend
 
-`nassim0x.com` is already verified for **sending**. Receiving is separate and
+Your sending domain may already be verified, but receiving is separate and
 needs an **MX record**.
 
 In the Resend dashboard: **Emails → Receiving**, enable receiving for
-`nassim0x.com`, and add the MX record it gives you to your DNS.
+your domain, and add the MX record it gives you to your DNS.
 
-> ⚠️ An MX record controls **all** mail for that domain. If `nassim0x.com`
+> ⚠️ An MX record controls **all** mail for that domain. If the root domain
 > already receives real email, do **not** point its MX at Resend. Use a
-> subdomain instead — e.g. `inbound.nassim0x.com` — and send test mail to
-> `service@inbound.nassim0x.com`.
+> subdomain instead — e.g. `inbound.example.com` — and send test mail to
+> `service@inbound.example.com`.
 >
 > For a demo you can skip DNS entirely: Resend gives every account a receiving
 > address of the form `anything@<id>.resend.app`. Find it under
@@ -70,7 +70,7 @@ Restart the dev server — Next.js reads `.env` at startup.
 ## 4. Send yourself a test
 
 ```
-To:      service@inbound.nassim0x.com   (or your @<id>.resend.app address)
+To:      service@inbound.example.com   (or your @<id>.resend.app address)
 Subject: Question about JOB-1
 Body:    Hello, this is CUS-A about JOB-1. Is my car ready?
 ```

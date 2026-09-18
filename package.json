@@ -1,6 +1,7 @@
 {
-  "name": "c01-dealership-prototype",
+  "name": "workshopguard",
   "version": "0.1.0",
+  "description": "Conflict-aware customer communication for vehicle workshops.",
   "private": true,
   "type": "module",
   "scripts": {
